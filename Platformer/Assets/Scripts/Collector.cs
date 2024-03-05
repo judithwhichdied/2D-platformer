@@ -25,6 +25,5 @@ public class Collector : MonoBehaviour
     private void TakeCoin()
     {
         _coinCount++;
-        Debug.Log(_coinCount);
     }
 }

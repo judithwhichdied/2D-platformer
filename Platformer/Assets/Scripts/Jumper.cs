@@ -9,6 +9,9 @@ public class Jumper : MonoBehaviour
     private const string _animGrounded = "Grounded";
     private const string _jumpButton = "space";
     private const string _animJump = "Jump";
+    private const string _groundSensorName = "GroundSensor";
+    private const string _playerName = "Player";
+    private const string _colliderName = "Collider";
 
     private Sensor_Bandit _groundSensor;
     private bool _grounded = false;
@@ -23,10 +26,10 @@ public class Jumper : MonoBehaviour
         _player = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
 
-        _groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Bandit>();
+        _groundSensor = transform.Find(_groundSensorName).GetComponent<Sensor_Bandit>();
 
-        _playerObject = LayerMask.NameToLayer("Player");
-        _collideObject = LayerMask.NameToLayer("Collider");
+        _playerObject = LayerMask.NameToLayer(_playerName);
+        _collideObject = LayerMask.NameToLayer(_colliderName);
     }
 
     private void Update()
@@ -61,10 +64,12 @@ public class Jumper : MonoBehaviour
 
     private void Jump()
     {
+        float delay = 0.2f;
+
         _animator.SetTrigger(_animJump);
         _grounded = false;
         _animator.SetBool(_animGrounded, _grounded);
         _player.velocity = new Vector2(_player.velocity.x, _jumpForce);
-        _groundSensor.Disable(0.2f);
+        _groundSensor.Disable(delay);
     }
 }
