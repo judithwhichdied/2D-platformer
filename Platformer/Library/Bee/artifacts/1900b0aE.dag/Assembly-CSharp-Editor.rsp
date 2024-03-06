@@ -369,8 +369,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Tilemap.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Tilemap.Extras.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Tilemap.Extras.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.Editor.ref.dll"
--r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Burst.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Collections.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InternalAPIEditorBridge.001.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InternalAPIEditorBridge.005.ref.dll"

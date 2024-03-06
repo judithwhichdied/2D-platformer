@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 150}
   m_MaxSize: {x: 24288, y: 24288}
   vertical: 1
-  controlID: 171
+  controlID: 170
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 150}
   m_MaxSize: {x: 24288, y: 24288}
   vertical: 0
-  controlID: 172
+  controlID: 171
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -715,7 +715,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/Particles
-      index: 9
+      index: 8
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -832,7 +832,7 @@ MonoBehaviour:
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: Scene View/TrailRenderer
-      index: 10
+      index: 9
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -1093,9 +1093,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 2a440000
+      m_SelectedIDs: f4600000
       m_LastClickedID: 0
-      m_ExpandedIDs: ecfaffff
+      m_ExpandedIDs: 087cffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1311,9 +1311,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 90}
-    m_SelectedIDs: 00750000
-    m_LastClickedID: 29952
-    m_ExpandedIDs: 00000000647300006673000000ca9a3bffffff7f
+    m_SelectedIDs: 8e960000
+    m_LastClickedID: 38542
+    m_ExpandedIDs: 00000000029500000495000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1341,7 +1341,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006473000066730000
+    m_ExpandedIDs: 000000000295000004950000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

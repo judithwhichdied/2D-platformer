@@ -4,6 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class EnemyMover : MonoBehaviour
 {
+    private const string AnimState = nameof(AnimState);
+
     [SerializeField] private Transform _waypointPrefab;
 
     private Animator _animator;
@@ -42,6 +44,8 @@ public class EnemyMover : MonoBehaviour
 
     private void Patrol()
     {
+        int animStateValue = 2;
+
         if (transform.position.x == _waypoints[_currentWaypoint].x)
         {
             _currentWaypoint = (++_currentWaypoint) % _waypoints.Count;
@@ -56,8 +60,9 @@ public class EnemyMover : MonoBehaviour
             }
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, _waypoints[_currentWaypoint], _speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards
+            (transform.position, _waypoints[_currentWaypoint], _speed * Time.deltaTime);
 
-        _animator.SetInteger("AnimState", 2);
+        _animator.SetInteger(AnimState, animStateValue);
     }
 }

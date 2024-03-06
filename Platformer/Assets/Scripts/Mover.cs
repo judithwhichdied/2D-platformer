@@ -9,7 +9,7 @@ public class Mover : MonoBehaviour
     private Animator _animator;
     private Rigidbody2D _player;
 
-    private const string _animState = "AnimState";
+    private const string AnimState = nameof(AnimState);
 
     private void Start()
     {
@@ -34,8 +34,8 @@ public class Mover : MonoBehaviour
         _player.velocity = new Vector2 (inputX * _speed, _player.velocity.y);
 
         if (Mathf.Abs(inputX) > Mathf.Epsilon)
-            _animator.SetInteger(_animState, 2);
+            _animator.SetInteger(AnimState, 2);
         else
-            _animator.SetInteger(_animState, 0);
+            _animator.SetInteger(AnimState, 0);
     }
 }
